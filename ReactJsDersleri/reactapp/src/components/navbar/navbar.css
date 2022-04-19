@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: darkslategray;
+}
+
+.navList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navListItem{
+    float: left;
+    margin-right: 30px;
+}
+
+.navListLink{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navListLink:hover{
+    background-color: rgb(31, 64, 64);
+}
