@@ -9,6 +9,7 @@ class App extends Component {
       <div className='container'>
         <Bar title='Kullanıcı uygulaması'/>
         <User name="Mustafa Coşkun" salary="5000" department="Software"/>  
+        <User name="Ahmet Aksoy" salary="3500" department="Security"/>  
       </div>
     )
   }
