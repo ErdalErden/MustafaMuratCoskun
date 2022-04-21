@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Bar(){
+function Bar(props){
     return(
         <div>
-            <h3>User App</h3>
+            <h3>{props.title}</h3>
         </div>
     )
 }
