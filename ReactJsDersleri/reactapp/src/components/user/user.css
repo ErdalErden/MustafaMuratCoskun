@@ -1,0 +1,12 @@
+.user {
+    background-color: rgb(233, 233, 233);
+    padding: 20px 0;
+    border-radius: 20px;
+}
+.userList {
+    list-style-type: none;
+    margin:0;
+}
+.userListTitle{
+    font-weight: bold;
+}

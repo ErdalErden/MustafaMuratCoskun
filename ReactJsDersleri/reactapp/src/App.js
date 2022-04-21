@@ -7,9 +7,12 @@ class App extends Component {
   render() {
     return (
       <div className='container'>
-        <Bar title='Kullanıcı uygulaması'/>
-        <User name="Mustafa Coşkun" salary="5000" department="Software"/>  
-        <User name="Ahmet Aksoy" salary="3500" department="Security"/>  
+        <Bar title="User App"/>
+        <User name="Mustafa Coşkun" salary="5000" department="Software"/>
+        <hr />  
+        <User name="Ahmet Aksoy" salary="3000" department="Security"/>
+        <hr />  
+        <User name="Burcu Beyaz" salary="6000" department="Manager"/>  
       </div>
     )
   }
