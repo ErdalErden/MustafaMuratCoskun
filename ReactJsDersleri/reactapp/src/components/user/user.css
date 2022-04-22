@@ -9,4 +9,9 @@
 }
 .userListTitle{
     font-weight: bold;
+    cursor: pointer;
+    color:rgb(42, 117, 193)
+}
+.userListTitle:hover{
+    color:rgb(8, 48, 89)
 }
