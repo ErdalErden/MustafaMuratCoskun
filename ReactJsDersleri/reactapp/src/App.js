@@ -1,18 +1,38 @@
 import React, { Component } from 'react'
 import './App.css'
 import Bar from './components/bar/Bar'
-import User from './components/user/User'
+import Users from './components/users/Users'
 
 class App extends Component {
+  state = {
+    users : [
+      {
+        id : 1,
+        name : "Mustafa Coşkun",
+        salary : "5000",
+        department : "Bilişim"
+      },
+      {
+        id : 2,
+        name : "Gamze Özçelik",
+        salary : "4000",
+        department : "Manager"
+      },
+      {
+        id : 3,
+        name : "Hüseyin Aksoy",
+        salary : "2500",
+        department : "Güvenlik"
+      }
+    ]
+  }
   render() {
     return (
       <div className='container'>
         <Bar title="User App"/>
-        <User name="Mustafa Coşkun" salary="5000" department="Software"/>
-        <hr />  
-        <User name="Ahmet Aksoy" salary="3000" department="Security"/>
-        <hr />  
-        <User name="Burcu Beyaz" salary="6000" department="Manager"/>  
+        <hr />
+        <Users users={this.state.users}/>
+
       </div>
     )
   }
