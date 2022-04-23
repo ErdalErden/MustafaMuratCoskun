@@ -19,7 +19,6 @@ class User extends Component {
   // }
 
 
-
   onClickEvent = (e) => {
     this.setState({
       isVisible : !this.state.isVisible
@@ -27,8 +26,8 @@ class User extends Component {
 
   }
   onDeleteUser = (e) => {
-    const {id,deleteUser} = this.props;
-    deleteUser(id);
+    const {id} = this.props;
+    // Consumer
   }
   render() {
     //Destructing
@@ -62,7 +61,6 @@ User.propTypes = {
   name : PropTypes.string.isRequired,
   department : PropTypes.string.isRequired,
   salary : PropTypes.string.isRequired,
-  deleteUser : PropTypes.func.isRequired,
 }
 
 User.defaultProps = {
