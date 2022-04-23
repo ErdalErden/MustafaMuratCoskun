@@ -26,6 +26,10 @@ class User extends Component {
     })
 
   }
+  onDeleteUser = (e) => {
+    const {id,deleteUser} = this.props;
+    deleteUser(id);
+  }
   render() {
     //Destructing
     const {name,department,salary } = this.props;
@@ -37,7 +41,7 @@ class User extends Component {
             <h4 className="d-inline userListTitle" onClick={this.onClickEvent}>
               {name}
             </h4>
-            <i className="far fa-trash-alt"></i>
+            <i onClick={this.onDeleteUser} className="far fa-trash-alt"></i>
           </div>
           {
             isVisible ?
@@ -57,7 +61,8 @@ class User extends Component {
 User.propTypes = {
   name : PropTypes.string.isRequired,
   department : PropTypes.string.isRequired,
-  salary : PropTypes.string.isRequired
+  salary : PropTypes.string.isRequired,
+  deleteUser : PropTypes.func.isRequired,
 }
 
 User.defaultProps = {
